@@ -1067,7 +1067,7 @@
                         <td colspan="2">' + (feature.properties['ec_violation_count'] !== null ? autolinker.link(String(feature.properties['ec_violation_count']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['violations_detail'] !== null ? autolinker.link(String(feature.properties['violations_detail']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['violations_detail'] !== null ? autolinker.link(String(feature.properties['violations_detail']).replace(/'/g, '\'').replace(/, (EC)/g, '<br>$1').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">parcel_status</th>\
