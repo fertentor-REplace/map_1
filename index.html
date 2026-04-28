@@ -35,7 +35,7 @@
         <script src="js/labelgun.min.js"></script>
         <script src="js/labels.js"></script>
         <script src="js/leaflet-measure.js"></script>
-        <script src="data/eEC55nvironmental_constraints_ffh_and_conservation_tama_35_view_complex_2.js"></script>
+        <script src="data/EC55environmental_constraints_ffh_and_conservation_tama_35_view_complex_2.js"></script>
         <script src="data/EC53environmental_constraints_protected_parks_tama_35_forest_and_forestry_3.js"></script>
         <script src="data/EC61environmental_constraints_protected_parks_reserves_and_parks_detailed_outline_plans_4.js"></script>
         <script src="data/EC62environmental_constraints_protected_parks_reserves_and_parks_national_outline_plans_5.js"></script>
@@ -45,11 +45,11 @@
         <script src="data/EC109base_layers_infrastructure_road_compilation_roads_9.js"></script>
         <script src="data/EC71base_layers_water_bodies_tama_1_stream_10.js"></script>
         <script src="data/EC75base_layers_water_bodies_tama_35_rivers_11.js"></script>
-        <script src="data/exclusion_reason_layerexclusion_reason_12.js"></script>
+        <script src="data/ParcelsClickformoreinformation_12.js"></script>
         <script>
         var map = L.map('map', {
             zoomControl:false, maxZoom:28, minZoom:1
-        }).fitBounds([[32.68874696203776,35.51311607969718],[32.76207224131543,35.57621437273946]]);
+        }).fitBounds([[32.68874696203776,35.487134429620966],[32.76207224131543,35.602196022815626]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -123,7 +123,7 @@
         });
         layer_GoogleSatellite_1;
         map.addLayer(layer_GoogleSatellite_1);
-        function pop_eEC55nvironmental_constraints_ffh_and_conservation_tama_35_view_complex_2(feature, layer) {
+        function pop_EC55environmental_constraints_ffh_and_conservation_tama_35_view_complex_2(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['fid'] !== null ? autolinker.link(String(feature.properties['fid']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
@@ -148,9 +148,9 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_eEC55nvironmental_constraints_ffh_and_conservation_tama_35_view_complex_2_0() {
+        function style_EC55environmental_constraints_ffh_and_conservation_tama_35_view_complex_2_0() {
             return {
-                pane: 'pane_eEC55nvironmental_constraints_ffh_and_conservation_tama_35_view_complex_2',
+                pane: 'pane_EC55environmental_constraints_ffh_and_conservation_tama_35_view_complex_2',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -163,19 +163,19 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_eEC55nvironmental_constraints_ffh_and_conservation_tama_35_view_complex_2');
-        map.getPane('pane_eEC55nvironmental_constraints_ffh_and_conservation_tama_35_view_complex_2').style.zIndex = 402;
-        map.getPane('pane_eEC55nvironmental_constraints_ffh_and_conservation_tama_35_view_complex_2').style['mix-blend-mode'] = 'normal';
-        var layer_eEC55nvironmental_constraints_ffh_and_conservation_tama_35_view_complex_2 = new L.geoJson(json_eEC55nvironmental_constraints_ffh_and_conservation_tama_35_view_complex_2, {
+        map.createPane('pane_EC55environmental_constraints_ffh_and_conservation_tama_35_view_complex_2');
+        map.getPane('pane_EC55environmental_constraints_ffh_and_conservation_tama_35_view_complex_2').style.zIndex = 402;
+        map.getPane('pane_EC55environmental_constraints_ffh_and_conservation_tama_35_view_complex_2').style['mix-blend-mode'] = 'normal';
+        var layer_EC55environmental_constraints_ffh_and_conservation_tama_35_view_complex_2 = new L.geoJson(json_EC55environmental_constraints_ffh_and_conservation_tama_35_view_complex_2, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_eEC55nvironmental_constraints_ffh_and_conservation_tama_35_view_complex_2',
-            layerName: 'layer_eEC55nvironmental_constraints_ffh_and_conservation_tama_35_view_complex_2',
-            pane: 'pane_eEC55nvironmental_constraints_ffh_and_conservation_tama_35_view_complex_2',
-            onEachFeature: pop_eEC55nvironmental_constraints_ffh_and_conservation_tama_35_view_complex_2,
-            style: style_eEC55nvironmental_constraints_ffh_and_conservation_tama_35_view_complex_2_0,
+            dataVar: 'json_EC55environmental_constraints_ffh_and_conservation_tama_35_view_complex_2',
+            layerName: 'layer_EC55environmental_constraints_ffh_and_conservation_tama_35_view_complex_2',
+            pane: 'pane_EC55environmental_constraints_ffh_and_conservation_tama_35_view_complex_2',
+            onEachFeature: pop_EC55environmental_constraints_ffh_and_conservation_tama_35_view_complex_2,
+            style: style_EC55environmental_constraints_ffh_and_conservation_tama_35_view_complex_2_0,
         });
-        bounds_group.addLayer(layer_eEC55nvironmental_constraints_ffh_and_conservation_tama_35_view_complex_2);
+        bounds_group.addLayer(layer_EC55environmental_constraints_ffh_and_conservation_tama_35_view_complex_2);
         function pop_EC53environmental_constraints_protected_parks_tama_35_forest_and_forestry_3(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -815,7 +815,7 @@
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
-                weight: 1.0,
+                weight: 4.0,
                 fillOpacity: 0,
                 interactive: true,
             }
@@ -968,7 +968,7 @@
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
-                weight: 1.0,
+                weight: 4.0,
                 fillOpacity: 0,
                 interactive: true,
             }
@@ -1028,7 +1028,7 @@
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
-                weight: 1.0,
+                weight: 4.0,
                 fillOpacity: 0,
                 interactive: true,
             }
@@ -1046,7 +1046,7 @@
             style: style_EC75base_layers_water_bodies_tama_35_rivers_11_0,
         });
         bounds_group.addLayer(layer_EC75base_layers_water_bodies_tama_35_rivers_11);
-        function pop_exclusion_reason_layerexclusion_reason_12(feature, layer) {
+        function pop_ParcelsClickformoreinformation_12(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['fid'] !== null ? autolinker.link(String(feature.properties['fid']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
@@ -1081,11 +1081,11 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_exclusion_reason_layerexclusion_reason_12_0(feature) {
+        function style_ParcelsClickformoreinformation_12_0(feature) {
             switch(String(feature.properties['parcel_status'])) {
                 case 'ELIGIBLE':
                     return {
-                pane: 'pane_exclusion_reason_layerexclusion_reason_12',
+                pane: 'pane_ParcelsClickformoreinformation_12',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -1100,7 +1100,7 @@
                     break;
                 case 'EXCLUDED: EC violation':
                     return {
-                pane: 'pane_exclusion_reason_layerexclusion_reason_12',
+                pane: 'pane_ParcelsClickformoreinformation_12',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -1115,7 +1115,7 @@
                     break;
                 case 'EXCLUDED: no rule values':
                     return {
-                pane: 'pane_exclusion_reason_layerexclusion_reason_12',
+                pane: 'pane_ParcelsClickformoreinformation_12',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -1130,7 +1130,7 @@
                     break;
                 default:
                     return {
-                pane: 'pane_exclusion_reason_layerexclusion_reason_12',
+                pane: 'pane_ParcelsClickformoreinformation_12',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -1145,22 +1145,22 @@
                     break;
             }
         }
-        map.createPane('pane_exclusion_reason_layerexclusion_reason_12');
-        map.getPane('pane_exclusion_reason_layerexclusion_reason_12').style.zIndex = 412;
-        map.getPane('pane_exclusion_reason_layerexclusion_reason_12').style['mix-blend-mode'] = 'normal';
-        var layer_exclusion_reason_layerexclusion_reason_12 = new L.geoJson(json_exclusion_reason_layerexclusion_reason_12, {
+        map.createPane('pane_ParcelsClickformoreinformation_12');
+        map.getPane('pane_ParcelsClickformoreinformation_12').style.zIndex = 412;
+        map.getPane('pane_ParcelsClickformoreinformation_12').style['mix-blend-mode'] = 'normal';
+        var layer_ParcelsClickformoreinformation_12 = new L.geoJson(json_ParcelsClickformoreinformation_12, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_exclusion_reason_layerexclusion_reason_12',
-            layerName: 'layer_exclusion_reason_layerexclusion_reason_12',
-            pane: 'pane_exclusion_reason_layerexclusion_reason_12',
-            onEachFeature: pop_exclusion_reason_layerexclusion_reason_12,
-            style: style_exclusion_reason_layerexclusion_reason_12_0,
+            dataVar: 'json_ParcelsClickformoreinformation_12',
+            layerName: 'layer_ParcelsClickformoreinformation_12',
+            pane: 'pane_ParcelsClickformoreinformation_12',
+            onEachFeature: pop_ParcelsClickformoreinformation_12,
+            style: style_ParcelsClickformoreinformation_12_0,
         });
-        bounds_group.addLayer(layer_exclusion_reason_layerexclusion_reason_12);
-        map.addLayer(layer_exclusion_reason_layerexclusion_reason_12);
+        bounds_group.addLayer(layer_ParcelsClickformoreinformation_12);
+        map.addLayer(layer_ParcelsClickformoreinformation_12);
         var overlaysTree = [
-            {label: 'exclusion_reason_layer — exclusion_reason<br /><table><tr><td style="text-align: center;"><img src="legend/exclusion_reason_layerexclusion_reason_12_ELIGIBLE0.png" /></td><td>ELIGIBLE</td></tr><tr><td style="text-align: center;"><img src="legend/exclusion_reason_layerexclusion_reason_12_EXCLUDEDECviolation1.png" /></td><td>EXCLUDED: EC violation</td></tr><tr><td style="text-align: center;"><img src="legend/exclusion_reason_layerexclusion_reason_12_EXCLUDEDnorulevalues2.png" /></td><td>EXCLUDED: no rule values</td></tr><tr><td style="text-align: center;"><img src="legend/exclusion_reason_layerexclusion_reason_12_3.png" /></td><td></td></tr></table>', layer: layer_exclusion_reason_layerexclusion_reason_12},
+            {label: 'Parcels (Click for more information)<br /><table><tr><td style="text-align: center;"><img src="legend/ParcelsClickformoreinformation_12_ELIGIBLE0.png" /></td><td>ELIGIBLE</td></tr><tr><td style="text-align: center;"><img src="legend/ParcelsClickformoreinformation_12_EXCLUDEDECviolation1.png" /></td><td>EXCLUDED: EC violation</td></tr><tr><td style="text-align: center;"><img src="legend/ParcelsClickformoreinformation_12_EXCLUDEDnorulevalues2.png" /></td><td>EXCLUDED: no rule values</td></tr><tr><td style="text-align: center;"><img src="legend/ParcelsClickformoreinformation_12_3.png" /></td><td></td></tr></table>', layer: layer_ParcelsClickformoreinformation_12},
         {label: '<b>Layers</b>',  selectAllCheckbox: true, children: [
             {label: '<img src="legend/EC75base_layers_water_bodies_tama_35_rivers_11.png" /> EC75 base_layers_water_bodies_tama_35_rivers', layer: layer_EC75base_layers_water_bodies_tama_35_rivers_11},
             {label: '<img src="legend/EC71base_layers_water_bodies_tama_1_stream_10.png" /> EC71 base_layers_water_bodies_tama_1_stream', layer: layer_EC71base_layers_water_bodies_tama_1_stream_10},
@@ -1171,7 +1171,7 @@
             {label: '<img src="legend/EC62environmental_constraints_protected_parks_reserves_and_parks_national_outline_plans_5.png" /> EC62 environmental_constraints_protected_parks_reserves_and_parks_national_outline_plans', layer: layer_EC62environmental_constraints_protected_parks_reserves_and_parks_national_outline_plans_5},
             {label: '<img src="legend/EC61environmental_constraints_protected_parks_reserves_and_parks_detailed_outline_plans_4.png" /> EC61 environmental_constraints_protected_parks_reserves_and_parks_detailed_outline_plans', layer: layer_EC61environmental_constraints_protected_parks_reserves_and_parks_detailed_outline_plans_4},
             {label: '<img src="legend/EC53environmental_constraints_protected_parks_tama_35_forest_and_forestry_3.png" /> EC53 environmental_constraints_protected_parks_tama_35_forest_and_forestry', layer: layer_EC53environmental_constraints_protected_parks_tama_35_forest_and_forestry_3},
-            {label: '<img src="legend/eEC55nvironmental_constraints_ffh_and_conservation_tama_35_view_complex_2.png" /> eEC55 nvironmental_constraints_ffh_and_conservation_tama_35_view_complex', layer: layer_eEC55nvironmental_constraints_ffh_and_conservation_tama_35_view_complex_2},]},
+            {label: '<img src="legend/EC55environmental_constraints_ffh_and_conservation_tama_35_view_complex_2.png" /> EC55 environmental_constraints_ffh_and_conservation_tama_35_view_complex', layer: layer_EC55environmental_constraints_ffh_and_conservation_tama_35_view_complex_2},]},
             {label: "Google Satellite", layer: layer_GoogleSatellite_1},
             {label: "Google Maps", layer: layer_GoogleMaps_0},]
         var lay = L.control.layers.tree(null, overlaysTree,{
