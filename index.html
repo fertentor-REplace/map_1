@@ -49,7 +49,7 @@
         <script>
         var map = L.map('map', {
             zoomControl:false, maxZoom:28, minZoom:1
-        }).fitBounds([[32.68874696203776,35.487134429620966],[32.76207224131543,35.602196022815626]]);
+        }).fitBounds([[32.68874696203776,35.47896689950778],[32.76207224131542,35.61036355292888]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -109,7 +109,6 @@
             maxNativeZoom: 19
         });
         layer_GoogleMaps_0;
-        map.addLayer(layer_GoogleMaps_0);
         map.createPane('pane_GoogleSatellite_1');
         map.getPane('pane_GoogleSatellite_1').style.zIndex = 401;
         var layer_GoogleSatellite_1 = L.tileLayer('https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
@@ -1113,36 +1112,6 @@
                 interactive: true,
             }
                     break;
-                case 'EXCLUDED: no rule values':
-                    return {
-                pane: 'pane_ParcelsClickformoreinformation_12',
-                opacity: 1,
-                color: 'rgba(35,35,35,1.0)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 1.0, 
-                fill: true,
-                fillOpacity: 1,
-                fillColor: 'rgba(90,234,169,1.0)',
-                interactive: true,
-            }
-                    break;
-                default:
-                    return {
-                pane: 'pane_ParcelsClickformoreinformation_12',
-                opacity: 1,
-                color: 'rgba(35,35,35,1.0)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 1.0, 
-                fill: true,
-                fillOpacity: 1,
-                fillColor: 'rgba(235,64,141,1.0)',
-                interactive: true,
-            }
-                    break;
             }
         }
         map.createPane('pane_ParcelsClickformoreinformation_12');
@@ -1160,8 +1129,8 @@
         bounds_group.addLayer(layer_ParcelsClickformoreinformation_12);
         map.addLayer(layer_ParcelsClickformoreinformation_12);
         var overlaysTree = [
-            {label: 'Parcels (Click for more information)<br /><table><tr><td style="text-align: center;"><img src="legend/ParcelsClickformoreinformation_12_ELIGIBLE0.png" /></td><td>ELIGIBLE</td></tr><tr><td style="text-align: center;"><img src="legend/ParcelsClickformoreinformation_12_EXCLUDEDECviolation1.png" /></td><td>EXCLUDED: EC violation</td></tr><tr><td style="text-align: center;"><img src="legend/ParcelsClickformoreinformation_12_EXCLUDEDnorulevalues2.png" /></td><td>EXCLUDED: no rule values</td></tr><tr><td style="text-align: center;"><img src="legend/ParcelsClickformoreinformation_12_3.png" /></td><td></td></tr></table>', layer: layer_ParcelsClickformoreinformation_12},
-        {label: '<b>Layers</b>',  selectAllCheckbox: true, children: [
+            {label: 'Parcels (Click for more information)<br /><table><tr><td style="text-align: center;"><img src="legend/ParcelsClickformoreinformation_12_ELIGIBLE0.png" /></td><td>ELIGIBLE</td></tr><tr><td style="text-align: center;"><img src="legend/ParcelsClickformoreinformation_12_EXCLUDEDECviolation1.png" /></td><td>EXCLUDED: EC violation</td></tr></table>', layer: layer_ParcelsClickformoreinformation_12},
+        {label: '<b>Layer Rule Set</b>',  selectAllCheckbox: true, children: [
             {label: '<img src="legend/EC75base_layers_water_bodies_tama_35_rivers_11.png" /> EC75 base_layers_water_bodies_tama_35_rivers', layer: layer_EC75base_layers_water_bodies_tama_35_rivers_11},
             {label: '<img src="legend/EC71base_layers_water_bodies_tama_1_stream_10.png" /> EC71 base_layers_water_bodies_tama_1_stream', layer: layer_EC71base_layers_water_bodies_tama_1_stream_10},
             {label: '<img src="legend/EC109base_layers_infrastructure_road_compilation_roads_9.png" /> EC109 base_layers_infrastructure_road_compilation_roads', layer: layer_EC109base_layers_infrastructure_road_compilation_roads_9},
